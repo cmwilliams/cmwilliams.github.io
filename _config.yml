@@ -1,15 +1,15 @@
 remote_theme: daattali/beautiful-jekyll@6.0.1
+
+# Basic site settings
+title: Mike Williams Blog
+description: Technical Articles and Tutorials
+
+# Your information
+author: Mike Williams
    
-   # Basic site settings
-   title: Your Site Title
-   description: A brief description of your site
-   
-   # Your information
-   author: Your Name
-   
-   # Optional: Add navigation links
-   navbar-links:
-     About Me: "aboutme"
-     Resources:
-       - Beautiful Jekyll: "https://beautifuljekyll.com"
-       - Learn markdown: "https://www.markdownguide.org/"
+# Optional: Add navigation links
+navbar-links:
+  About Me: "aboutme"
+  Resources:
+  - Beautiful Jekyll: "https://beautifuljekyll.com"
+  - Learn markdown: "https://www.markdownguide.org/"
