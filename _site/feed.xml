@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-01-19T17:08:28-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mike Williams Blog</title><subtitle>A blog about technology, programming, and tutorials on Piaware and .NET.</subtitle><author><name>Mike Williams</name></author><entry><title type="html">.NET Setup: SDK and Tooling</title><link href="http://localhost:4000/dotnet/2026/01/15/dotnet-setup-sdk-and-tooling/" rel="alternate" type="text/html" title=".NET Setup: SDK and Tooling" /><published>2026-01-15T00:00:00-05:00</published><updated>2026-01-15T00:00:00-05:00</updated><id>http://localhost:4000/dotnet/2026/01/15/dotnet-setup-sdk-and-tooling</id><content type="html" xml:base="http://localhost:4000/dotnet/2026/01/15/dotnet-setup-sdk-and-tooling/">&lt;h2 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h2&gt;
+
+&lt;p&gt;Before we begin, ensure that you have the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A computer running Windows, macOS, or Linux.&lt;/li&gt;
+  &lt;li&gt;Administrative privileges to install software.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;step-1-download-the-net-sdk&quot;&gt;Step 1: Download the .NET SDK&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Visit the official &lt;a href=&quot;https://dotnet.microsoft.com/download&quot;&gt;.NET download page&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Choose the version of the .NET SDK you wish to install. The latest stable version is recommended.&lt;/li&gt;
+  &lt;li&gt;Download the installer for your operating system.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;step-2-install-the-net-sdk&quot;&gt;Step 2: Install the .NET SDK&lt;/h2&gt;
+
+&lt;h3 id=&quot;windows&quot;&gt;Windows&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Run the downloaded installer.&lt;/li&gt;
+  &lt;li&gt;Follow the prompts in the installation wizard.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Once the installation is complete, open a command prompt and run the following command to verify the installation:&lt;/p&gt;
+
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet --version
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;macos&quot;&gt;macOS&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Open the downloaded &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.pkg&lt;/code&gt; file.&lt;/li&gt;
+  &lt;li&gt;Follow the installation instructions.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Open a terminal and run the following command to verify the installation:&lt;/p&gt;
+
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet --version
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;linux&quot;&gt;Linux&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Open a terminal and follow the instructions for your specific distribution from the &lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/core/install/linux&quot;&gt;.NET installation guide&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;After installation, run the following command to verify:&lt;/p&gt;
+
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet --version
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;step-3-install-an-ide&quot;&gt;Step 3: Install an IDE&lt;/h2&gt;
+
+&lt;p&gt;To develop .NET applications, you will need an Integrated Development Environment (IDE). The most popular choices are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Visual Studio&lt;/strong&gt; (Windows)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Visual Studio for Mac&lt;/strong&gt; (macOS)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Visual Studio Code&lt;/strong&gt; (Cross-platform)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;visual-studio-code-installation&quot;&gt;Visual Studio Code Installation&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Download Visual Studio Code from the &lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;official website&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Install the C# extension from the Extensions Marketplace to enable .NET development features.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;step-4-create-your-first-net-application&quot;&gt;Step 4: Create Your First .NET Application&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Open a terminal or command prompt.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Create a new console application by running:&lt;/p&gt;
+
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet new console -n MyFirstApp
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Navigate to the project directory:&lt;/p&gt;
+
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd MyFirstApp
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Run the application:&lt;/p&gt;
+
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet run
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;You should see “Hello World!” printed in the console.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;You have successfully set up the .NET SDK and tooling on your machine. You are now ready to start building .NET applications. In the upcoming articles, we will explore more advanced topics and features of .NET development. Happy coding!&lt;/p&gt;</content><author><name>Mike Williams</name></author><category term="dotnet" /><summary type="html">Prerequisites</summary></entry><entry><title type="html">Piaware Troubleshooting and Logs</title><link href="http://localhost:4000/piaware/2026/01/10/piaware-troubleshooting-and-logs/" rel="alternate" type="text/html" title="Piaware Troubleshooting and Logs" /><published>2026-01-10T00:00:00-05:00</published><updated>2026-01-10T00:00:00-05:00</updated><id>http://localhost:4000/piaware/2026/01/10/piaware-troubleshooting-and-logs</id><content type="html" xml:base="http://localhost:4000/piaware/2026/01/10/piaware-troubleshooting-and-logs/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;In this post, we will explore common troubleshooting techniques for Piaware, a popular software for receiving and decoding ADS-B signals. We will also discuss how to analyze logs to diagnose issues effectively.&lt;/p&gt;
+
+&lt;h2 id=&quot;common-issues&quot;&gt;Common Issues&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-no-data-received&quot;&gt;1. No Data Received&lt;/h3&gt;
+
+&lt;p&gt;If you are not receiving any data, check the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Ensure your receiver is properly connected and powered.&lt;/li&gt;
+  &lt;li&gt;Verify that your antenna is correctly positioned and not obstructed.&lt;/li&gt;
+  &lt;li&gt;Check your network connection to ensure that Piaware can communicate with the FlightAware servers.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;2-poor-signal-quality&quot;&gt;2. Poor Signal Quality&lt;/h3&gt;
+
+&lt;p&gt;If you are receiving data but the signal quality is poor:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Inspect your antenna placement. Elevating the antenna can significantly improve reception.&lt;/li&gt;
+  &lt;li&gt;Use a high-quality coaxial cable to minimize signal loss.&lt;/li&gt;
+  &lt;li&gt;Consider using a filter to eliminate interference from other electronic devices.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;analyzing-logs&quot;&gt;Analyzing Logs&lt;/h2&gt;
+
+&lt;p&gt;Piaware generates logs that can help you troubleshoot issues. You can find the logs in the following locations:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Piaware Logs&lt;/strong&gt;: Located in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/var/log/piaware.log&lt;/code&gt;, this file contains information about the Piaware service and its interactions with the receiver.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Dump1090 Logs&lt;/strong&gt;: If you are using Dump1090, check the logs at &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/var/log/dump1090.log&lt;/code&gt; for additional insights.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;log-analysis-tips&quot;&gt;Log Analysis Tips&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Look for error messages or warnings in the logs.&lt;/li&gt;
+  &lt;li&gt;Check timestamps to correlate issues with specific events.&lt;/li&gt;
+  &lt;li&gt;Use tools like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;grep&lt;/code&gt; to filter log entries for easier analysis.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Troubleshooting Piaware can be straightforward if you know where to look. By following the tips outlined in this post and analyzing the logs, you can resolve most issues and improve your ADS-B reception. If you continue to experience problems, consider reaching out to the community for support.&lt;/p&gt;
+
+&lt;p&gt;Happy flying!&lt;/p&gt;</content><author><name>Mike Williams</name></author><category term="piaware" /><summary type="html">Introduction</summary></entry><entry><title type="html">Piaware Setup on Raspberry Pi</title><link href="http://localhost:4000/piaware/2026/01/05/piaware-setup-on-raspberry-pi/" rel="alternate" type="text/html" title="Piaware Setup on Raspberry Pi" /><published>2026-01-05T00:00:00-05:00</published><updated>2026-01-05T00:00:00-05:00</updated><id>http://localhost:4000/piaware/2026/01/05/piaware-setup-on-raspberry-pi</id><content type="html" xml:base="http://localhost:4000/piaware/2026/01/05/piaware-setup-on-raspberry-pi/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;In this article, we will walk through the process of setting up Piaware on a Raspberry Pi. Piaware is a software package that allows you to receive and share ADS-B data from aircraft. By following these steps, you will be able to set up your Raspberry Pi to receive and share this data effectively.&lt;/p&gt;
+
+&lt;h2 id=&quot;requirements&quot;&gt;Requirements&lt;/h2&gt;
+
+&lt;p&gt;Before we begin, make sure you have the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A Raspberry Pi (any model should work, but Raspberry Pi 3 or later is recommended)&lt;/li&gt;
+  &lt;li&gt;A microSD card (at least 8GB)&lt;/li&gt;
+  &lt;li&gt;A power supply for the Raspberry Pi&lt;/li&gt;
+  &lt;li&gt;An internet connection (Wi-Fi or Ethernet)&lt;/li&gt;
+  &lt;li&gt;An ADS-B receiver (USB dongle)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;step-1-prepare-the-raspberry-pi&quot;&gt;Step 1: Prepare the Raspberry Pi&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Download the Raspberry Pi OS&lt;/strong&gt;: Go to the official Raspberry Pi website and download the latest version of Raspberry Pi OS.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Flash the OS to the microSD card&lt;/strong&gt;: Use a tool like Balena Etcher to flash the downloaded OS image onto your microSD card.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Insert the microSD card&lt;/strong&gt;: Once the flashing process is complete, insert the microSD card into your Raspberry Pi.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;step-2-boot-the-raspberry-pi&quot;&gt;Step 2: Boot the Raspberry Pi&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Connect your Raspberry Pi to a monitor, keyboard, and power supply.&lt;/li&gt;
+  &lt;li&gt;Power on the Raspberry Pi and follow the on-screen instructions to complete the initial setup.&lt;/li&gt;
+  &lt;li&gt;Make sure to connect to the internet during the setup process.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;step-3-install-piaware&quot;&gt;Step 3: Install Piaware&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Open a terminal on your Raspberry Pi.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Update the package list and install the necessary dependencies:&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get update
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt; git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Clone the Piaware repository:&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/flightaware/piaware.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Navigate to the Piaware directory:&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;piaware
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Run the installation script:&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo&lt;/span&gt; ./install.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;step-4-configure-piaware&quot;&gt;Step 4: Configure Piaware&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;After installation, you will need to configure Piaware. You can do this by editing the configuration file:&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;nano /etc/piaware.conf
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Add your FlightAware username and password to the configuration file:&lt;/p&gt;
+
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;flightaware_user YOUR_USERNAME
+flightaware_password YOUR_PASSWORD
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Save and exit the editor.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;step-5-connect-the-ads-b-receiver&quot;&gt;Step 5: Connect the ADS-B Receiver&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Plug your ADS-B USB dongle into one of the USB ports on the Raspberry Pi.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Verify that the receiver is recognized by running:&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;lsusb
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;You should see your ADS-B receiver listed.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;step-6-start-piaware&quot;&gt;Step 6: Start Piaware&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Start the Piaware service:&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;systemctl start piaware
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;To ensure that Piaware starts on boot, enable the service:&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;systemctl &lt;span class=&quot;nb&quot;&gt;enable &lt;/span&gt;piaware
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Congratulations! You have successfully set up Piaware on your Raspberry Pi. You can now monitor and share ADS-B data. For further customization and advanced features, refer to the official Piaware documentation.&lt;/p&gt;
+
+&lt;p&gt;Feel free to explore other articles on this blog for more technical tutorials and tips!&lt;/p&gt;</content><author><name>Mike Williams</name></author><category term="piaware" /><summary type="html">Introduction</summary></entry><entry><title type="html">Getting Started with Piaware</title><link href="http://localhost:4000/piaware/2026/01/01/getting-started-with-piaware/" rel="alternate" type="text/html" title="Getting Started with Piaware" /><published>2026-01-01T00:00:00-05:00</published><updated>2026-01-01T00:00:00-05:00</updated><id>http://localhost:4000/piaware/2026/01/01/getting-started-with-piaware</id><content type="html" xml:base="http://localhost:4000/piaware/2026/01/01/getting-started-with-piaware/">&lt;p&gt;Piaware is a powerful tool that allows you to receive and share ADS-B data from aircraft flying overhead. In this article, we will cover the basics of getting started with Piaware, including what you need to set it up and how to get your first data feed.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-piaware&quot;&gt;What is Piaware?&lt;/h2&gt;
+
+&lt;p&gt;Piaware is a software package that runs on a Raspberry Pi and allows you to receive ADS-B signals from aircraft. It can be used to track flights in real-time and share that data with the FlightAware network, contributing to a global flight tracking system.&lt;/p&gt;
+
+&lt;h2 id=&quot;requirements&quot;&gt;Requirements&lt;/h2&gt;
+
+&lt;p&gt;To get started with Piaware, you will need the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A Raspberry Pi (any model should work, but the Raspberry Pi 3 or 4 is recommended for better performance)&lt;/li&gt;
+  &lt;li&gt;An ADS-B receiver (such as a USB dongle)&lt;/li&gt;
+  &lt;li&gt;A microSD card (at least 8GB)&lt;/li&gt;
+  &lt;li&gt;A power supply for the Raspberry Pi&lt;/li&gt;
+  &lt;li&gt;An internet connection (for downloading software and sharing data)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;installation-steps&quot;&gt;Installation Steps&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Download the Piaware Image&lt;/strong&gt;: Visit the &lt;a href=&quot;https://flightaware.com/adsb/piaware/download&quot;&gt;FlightAware website&lt;/a&gt; to download the latest Piaware image for Raspberry Pi.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Flash the Image to the microSD Card&lt;/strong&gt;: Use a tool like Balena Etcher to flash the downloaded image onto your microSD card.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Insert the microSD Card and Boot&lt;/strong&gt;: Insert the microSD card into your Raspberry Pi, connect the ADS-B receiver, and power it on.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Configure Piaware&lt;/strong&gt;: Once the Raspberry Pi boots up, you can access the Piaware configuration page by navigating to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;http://piaware.local&lt;/code&gt; in your web browser. Follow the on-screen instructions to set up your account and configure your receiver.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Start Receiving Data&lt;/strong&gt;: After configuration, Piaware will start receiving ADS-B data. You can monitor the data feed through the FlightAware website.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Setting up Piaware is a straightforward process that allows you to contribute to the global flight tracking community. In the next articles, we will dive deeper into advanced configurations and troubleshooting tips. Stay tuned!&lt;/p&gt;</content><author><name>Mike Williams</name></author><category term="piaware" /><summary type="html">Piaware is a powerful tool that allows you to receive and share ADS-B data from aircraft flying overhead. In this article, we will cover the basics of getting started with Piaware, including what you need to set it up and how to get your first data feed.</summary></entry></feed>

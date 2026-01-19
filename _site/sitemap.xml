@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>http://localhost:4000/piaware/2026/01/01/getting-started-with-piaware/</loc>
+<lastmod>2026-01-01T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/piaware/2026/01/05/piaware-setup-on-raspberry-pi/</loc>
+<lastmod>2026-01-05T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/piaware/2026/01/10/piaware-troubleshooting-and-logs/</loc>
+<lastmod>2026-01-10T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dotnet/2026/01/15/dotnet-setup-sdk-and-tooling/</loc>
+<lastmod>2026-01-15T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/about/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/category/dotnet/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/category/piaware/</loc>
+</url>
+</urlset>

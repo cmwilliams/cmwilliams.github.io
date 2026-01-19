@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piaware Setup on Raspberry Pi - Mike Williams Blog</title>
+    <link rel="stylesheet" href="/assets/css/custom.css">
+    <meta name="description" content="A blog about technology, programming, and tutorials on Piaware and .NET.">
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Piaware Setup on Raspberry Pi | Mike Williams Blog</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Piaware Setup on Raspberry Pi" />
+<meta name="author" content="Mike Williams" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Introduction" />
+<meta property="og:description" content="Introduction" />
+<link rel="canonical" href="http://localhost:4000/piaware/2026/01/05/piaware-setup-on-raspberry-pi/" />
+<meta property="og:url" content="http://localhost:4000/piaware/2026/01/05/piaware-setup-on-raspberry-pi/" />
+<meta property="og:site_name" content="Mike Williams Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-01-05T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Piaware Setup on Raspberry Pi" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/piaware/2026/01/05/piaware-setup-on-raspberry-pi/","datePublished":"2026-01-05T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/piaware/2026/01/05/piaware-setup-on-raspberry-pi/"},"author":{"@type":"Person","name":"Mike Williams"},"@type":"BlogPosting","description":"Introduction","headline":"Piaware Setup on Raspberry Pi","dateModified":"2026-01-05T00:00:00-05:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+<script src="/assets/js/custom.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1><a href="/">Mike Williams Blog</a></h1>
+        <nav>
+            <ul>
+                
+                    <li><a href="/">Home</a></li>
+                
+                    <li><a href="/about">About</a></li>
+                
+                    <li><a href="/category/piaware/">Piaware Articles</a></li>
+                
+                    <li><a href="/category/dotnet/">.NET Tutorials</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+  <header>
+    <h1>Piaware Setup on Raspberry Pi</h1>
+    <p><small>2026-01-05</small></p>
+  </header>
+
+  <h2 id="introduction">Introduction</h2>
+
+<p>In this article, we will walk through the process of setting up Piaware on a Raspberry Pi. Piaware is a software package that allows you to receive and share ADS-B data from aircraft. By following these steps, you will be able to set up your Raspberry Pi to receive and share this data effectively.</p>
+
+<h2 id="requirements">Requirements</h2>
+
+<p>Before we begin, make sure you have the following:</p>
+
+<ul>
+  <li>A Raspberry Pi (any model should work, but Raspberry Pi 3 or later is recommended)</li>
+  <li>A microSD card (at least 8GB)</li>
+  <li>A power supply for the Raspberry Pi</li>
+  <li>An internet connection (Wi-Fi or Ethernet)</li>
+  <li>An ADS-B receiver (USB dongle)</li>
+</ul>
+
+<h2 id="step-1-prepare-the-raspberry-pi">Step 1: Prepare the Raspberry Pi</h2>
+
+<ol>
+  <li><strong>Download the Raspberry Pi OS</strong>: Go to the official Raspberry Pi website and download the latest version of Raspberry Pi OS.</li>
+  <li><strong>Flash the OS to the microSD card</strong>: Use a tool like Balena Etcher to flash the downloaded OS image onto your microSD card.</li>
+  <li><strong>Insert the microSD card</strong>: Once the flashing process is complete, insert the microSD card into your Raspberry Pi.</li>
+</ol>
+
+<h2 id="step-2-boot-the-raspberry-pi">Step 2: Boot the Raspberry Pi</h2>
+
+<ol>
+  <li>Connect your Raspberry Pi to a monitor, keyboard, and power supply.</li>
+  <li>Power on the Raspberry Pi and follow the on-screen instructions to complete the initial setup.</li>
+  <li>Make sure to connect to the internet during the setup process.</li>
+</ol>
+
+<h2 id="step-3-install-piaware">Step 3: Install Piaware</h2>
+
+<ol>
+  <li>Open a terminal on your Raspberry Pi.</li>
+  <li>
+    <p>Update the package list and install the necessary dependencies:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get update
+<span class="nb">sudo </span>apt-get <span class="nb">install</span> <span class="nt">-y</span> git
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Clone the Piaware repository:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/flightaware/piaware.git
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Navigate to the Piaware directory:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>piaware
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Run the installation script:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo</span> ./install.sh
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="step-4-configure-piaware">Step 4: Configure Piaware</h2>
+
+<ol>
+  <li>
+    <p>After installation, you will need to configure Piaware. You can do this by editing the configuration file:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>nano /etc/piaware.conf
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Add your FlightAware username and password to the configuration file:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>flightaware_user YOUR_USERNAME
+flightaware_password YOUR_PASSWORD
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Save and exit the editor.</p>
+  </li>
+</ol>
+
+<h2 id="step-5-connect-the-ads-b-receiver">Step 5: Connect the ADS-B Receiver</h2>
+
+<ol>
+  <li>Plug your ADS-B USB dongle into one of the USB ports on the Raspberry Pi.</li>
+  <li>
+    <p>Verify that the receiver is recognized by running:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lsusb
+</code></pre></div>    </div>
+  </li>
+  <li>You should see your ADS-B receiver listed.</li>
+</ol>
+
+<h2 id="step-6-start-piaware">Step 6: Start Piaware</h2>
+
+<ol>
+  <li>
+    <p>Start the Piaware service:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>systemctl start piaware
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>To ensure that Piaware starts on boot, enable the service:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>systemctl <span class="nb">enable </span>piaware
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Congratulations! You have successfully set up Piaware on your Raspberry Pi. You can now monitor and share ADS-B data. For further customization and advanced features, refer to the official Piaware documentation.</p>
+
+<p>Feel free to explore other articles on this blog for more technical tutorials and tips!</p>
+
+</article>
+
+    </main>
+    <footer>
+        <p>&copy; 2026 Mike Williams. All rights reserved.</p>
+    </footer>
+</body>
+</html>

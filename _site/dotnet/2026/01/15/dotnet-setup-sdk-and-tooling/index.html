@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.NET Setup: SDK and Tooling - Mike Williams Blog</title>
+    <link rel="stylesheet" href="/assets/css/custom.css">
+    <meta name="description" content="A blog about technology, programming, and tutorials on Piaware and .NET.">
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>.NET Setup: SDK and Tooling | Mike Williams Blog</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content=".NET Setup: SDK and Tooling" />
+<meta name="author" content="Mike Williams" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Prerequisites" />
+<meta property="og:description" content="Prerequisites" />
+<link rel="canonical" href="http://localhost:4000/dotnet/2026/01/15/dotnet-setup-sdk-and-tooling/" />
+<meta property="og:url" content="http://localhost:4000/dotnet/2026/01/15/dotnet-setup-sdk-and-tooling/" />
+<meta property="og:site_name" content="Mike Williams Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-01-15T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content=".NET Setup: SDK and Tooling" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/dotnet/2026/01/15/dotnet-setup-sdk-and-tooling/","datePublished":"2026-01-15T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/dotnet/2026/01/15/dotnet-setup-sdk-and-tooling/"},"author":{"@type":"Person","name":"Mike Williams"},"@type":"BlogPosting","description":"Prerequisites","headline":".NET Setup: SDK and Tooling","dateModified":"2026-01-15T00:00:00-05:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+<script src="/assets/js/custom.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1><a href="/">Mike Williams Blog</a></h1>
+        <nav>
+            <ul>
+                
+                    <li><a href="/">Home</a></li>
+                
+                    <li><a href="/about">About</a></li>
+                
+                    <li><a href="/category/piaware/">Piaware Articles</a></li>
+                
+                    <li><a href="/category/dotnet/">.NET Tutorials</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+  <header>
+    <h1>.NET Setup: SDK and Tooling</h1>
+    <p><small>2026-01-15</small></p>
+  </header>
+
+  <h2 id="prerequisites">Prerequisites</h2>
+
+<p>Before we begin, ensure that you have the following:</p>
+
+<ul>
+  <li>A computer running Windows, macOS, or Linux.</li>
+  <li>Administrative privileges to install software.</li>
+</ul>
+
+<h2 id="step-1-download-the-net-sdk">Step 1: Download the .NET SDK</h2>
+
+<ol>
+  <li>Visit the official <a href="https://dotnet.microsoft.com/download">.NET download page</a>.</li>
+  <li>Choose the version of the .NET SDK you wish to install. The latest stable version is recommended.</li>
+  <li>Download the installer for your operating system.</li>
+</ol>
+
+<h2 id="step-2-install-the-net-sdk">Step 2: Install the .NET SDK</h2>
+
+<h3 id="windows">Windows</h3>
+
+<ol>
+  <li>Run the downloaded installer.</li>
+  <li>Follow the prompts in the installation wizard.</li>
+  <li>
+    <p>Once the installation is complete, open a command prompt and run the following command to verify the installation:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dotnet --version
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h3 id="macos">macOS</h3>
+
+<ol>
+  <li>Open the downloaded <code class="language-plaintext highlighter-rouge">.pkg</code> file.</li>
+  <li>Follow the installation instructions.</li>
+  <li>
+    <p>Open a terminal and run the following command to verify the installation:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dotnet --version
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h3 id="linux">Linux</h3>
+
+<ol>
+  <li>Open a terminal and follow the instructions for your specific distribution from the <a href="https://docs.microsoft.com/en-us/dotnet/core/install/linux">.NET installation guide</a>.</li>
+  <li>
+    <p>After installation, run the following command to verify:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dotnet --version
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="step-3-install-an-ide">Step 3: Install an IDE</h2>
+
+<p>To develop .NET applications, you will need an Integrated Development Environment (IDE). The most popular choices are:</p>
+
+<ul>
+  <li><strong>Visual Studio</strong> (Windows)</li>
+  <li><strong>Visual Studio for Mac</strong> (macOS)</li>
+  <li><strong>Visual Studio Code</strong> (Cross-platform)</li>
+</ul>
+
+<h3 id="visual-studio-code-installation">Visual Studio Code Installation</h3>
+
+<ol>
+  <li>Download Visual Studio Code from the <a href="https://code.visualstudio.com/">official website</a>.</li>
+  <li>Install the C# extension from the Extensions Marketplace to enable .NET development features.</li>
+</ol>
+
+<h2 id="step-4-create-your-first-net-application">Step 4: Create Your First .NET Application</h2>
+
+<ol>
+  <li>Open a terminal or command prompt.</li>
+  <li>
+    <p>Create a new console application by running:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dotnet new console -n MyFirstApp
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Navigate to the project directory:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd MyFirstApp
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Run the application:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dotnet run
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p>You should see “Hello World!” printed in the console.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>You have successfully set up the .NET SDK and tooling on your machine. You are now ready to start building .NET applications. In the upcoming articles, we will explore more advanced topics and features of .NET development. Happy coding!</p>
+
+</article>
+
+    </main>
+    <footer>
+        <p>&copy; 2026 Mike Williams. All rights reserved.</p>
+    </footer>
+</body>
+</html>
