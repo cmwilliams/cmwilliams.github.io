@@ -1,6 +1,6 @@
 ---
 title: .NET Dependency Injection Basics
-categories: [dotnet]
+tags: [dotnet, dependency-injection, design-patterns]
 ---
 
 ## Introduction

@@ -1,6 +1,6 @@
 ---
 title: .NET Testing with xUnit
-categories: [dotnet]
+tags: [dotnet, testing, xunit]
 ---
 
 ## What is xUnit?

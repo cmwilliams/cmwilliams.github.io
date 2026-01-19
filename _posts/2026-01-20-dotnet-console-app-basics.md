@@ -1,6 +1,6 @@
 ---
 title: .NET Console App Basics
-categories: [dotnet]
+tags: [dotnet, console, csharp]
 ---
 
 ## Introduction

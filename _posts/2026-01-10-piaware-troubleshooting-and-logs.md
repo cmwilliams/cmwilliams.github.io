@@ -1,6 +1,6 @@
 ---
 title: Piaware Troubleshooting and Logs
-categories: [piaware]
+tags: [piaware, troubleshooting, logs]
 ---
 
 ## Introduction

@@ -1,6 +1,6 @@
 ---
 title: Entity Framework Core Migrations
-categories: [dotnet]
+tags: [dotnet, entity-framework, database]
 ---
 
 ## What are Migrations?

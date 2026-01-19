@@ -1,6 +1,6 @@
 ---
 title: ".NET Setup: SDK and Tooling"
-categories: [dotnet]
+tags: [dotnet, setup, sdk]
 ---
 
 ## Prerequisites

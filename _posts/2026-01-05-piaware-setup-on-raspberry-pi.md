@@ -1,6 +1,6 @@
 ---
 title: Piaware Setup on Raspberry Pi
-categories: [piaware]
+tags: [piaware, raspberry-pi, setup]
 ---
 
 ## Introduction

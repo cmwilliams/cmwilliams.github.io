@@ -1,6 +1,6 @@
 ---
 title: ASP.NET Core Web API Intro
-categories: [dotnet]
+tags: [dotnet, aspnet-core, web-api]
 ---
 
 ## What is ASP.NET Core?

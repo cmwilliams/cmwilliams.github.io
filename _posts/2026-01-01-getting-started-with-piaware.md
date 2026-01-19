@@ -1,6 +1,6 @@
 ---
 title: Getting Started with Piaware
-categories: [piaware]
+tags: [piaware, raspberry-pi, ads-b]
 ---
 
 Piaware is a powerful tool that allows you to receive and share ADS-B data from aircraft flying overhead. In this article, we will cover the basics of getting started with Piaware, including what you need to set it up and how to get your first data feed.
