@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} - Mike Williams Blog</title>
+    <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+    {% include custom-head.html %}
+</head>
+<body>
+    <header>
+        <h1><a href="{{ '/' | relative_url }}">Mike Williams Blog</a></h1>
+        <nav>
+            <ul>
+                {% for item in site.data.navigation %}
+                    <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {{ content }}
+    </main>
+    <footer>
+        <p>&copy; {{ site.time | date: '%Y' }} Mike Williams. All rights reserved.</p>
+    </footer>
+</body>
+</html>

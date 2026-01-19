@@ -1,17 +1,10 @@
----
-layout: home
-title: Welcome
-subtitle: This is my GitHub Pages site
----
+# Welcome to Mike Williams Blog
 
-## About This Site
+Hello and welcome to my blog! Here, I share my insights and experiences on various technical topics, including:
 
-Welcome to my site! This is built using GitHub Pages and the Beautiful Jekyll theme.
+- **Piaware**: Learn how to set up and troubleshoot your Piaware installation, along with tips and tricks for optimizing your setup.
+- **.NET Tutorials**: Explore a range of tutorials covering everything from the basics of .NET development to advanced topics like dependency injection and testing.
 
-### What's Here
+Feel free to browse through my articles, and don't hesitate to reach out if you have any questions or suggestions!
 
-This is a placeholder homepage. You can customize this page by editing the `index.md` file in your repository.
-
-### Getting Started
-
-Feel free to explore and check back soon for updates!
+Happy reading!

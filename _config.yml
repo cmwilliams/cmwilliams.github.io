@@ -1,15 +1,25 @@
-remote_theme: daattali/beautiful-jekyll@6.0.1
-
-# Basic site settings
 title: Mike Williams Blog
-description: Technical Articles and Tutorials
-
-# Your information
+description: A blog about technology, programming, and tutorials on Piaware and .NET.
+url: https://yourusername.github.io/mike-williams-blog
+theme: beautiful-jekyll
 author: Mike Williams
-   
-# Optional: Add navigation links
-navbar-links:
-  About Me: "aboutme"
-  Resources:
-  - Beautiful Jekyll: "https://beautifuljekyll.com"
-  - Learn markdown: "https://www.markdownguide.org/"
+email: mike.williams@example.com
+social:
+  github: https://github.com/yourusername
+  twitter: https://twitter.com/yourusername
+  linkedin: https://linkedin.com/in/yourusername
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - 404.md
+  - about.md
+  - index.md
+  - _posts/*
