@@ -4,9 +4,42 @@ layout: default
 
 <article>
   <header>
+    {% if page.categories %}
+    <div class="mb-3">
+      {% for category in page.categories %}
+        <span class="category-badge {{ category }}">{{ category }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
     <h1>{{ page.title }}</h1>
-    <p><small>{{ page.date | date: "%Y-%m-%d" }}</small></p>
+    <div class="post-meta">
+      <span>
+        <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+        </svg>
+        {{ page.date | date: "%B %d, %Y" }}
+      </span>
+      <span>
+        <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        </svg>
+        {{ content | number_of_words | divided_by: 200 | plus: 1 }} min read
+      </span>
+    </div>
   </header>
 
-  {{ content }}
+  <div class="article-content">
+    {{ content }}
+  </div>
+
+  <footer class="mt-5" style="border-top: 1px solid var(--border-color); padding-top: 2rem;">
+    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+      <a href="{{ '/' | relative_url }}" class="btn btn-outline">← Back to Home</a>
+      {% if page.categories %}
+      <a href="{{ '/category/' | append: page.categories[0] | append: '/' | relative_url }}" class="btn btn-outline">
+        More {{ page.categories[0] | capitalize }} Articles
+      </a>
+      {% endif %}
+    </div>
+  </footer>
 </article>
