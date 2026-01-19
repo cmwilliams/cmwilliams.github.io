@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About Me
-subtitle: Developer • Aviation Enthusiast • Teacher
+subtitle: Developer • Aviation Enthusiast
 ---
 
 ## Hi, I'm Mike Williams! 👋
