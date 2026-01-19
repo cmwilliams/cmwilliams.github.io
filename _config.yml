@@ -1,7 +1,7 @@
 title: Mike Williams Blog
 description: A blog about technology, programming, and tutorials on Piaware and .NET.
-url: https://yourusername.github.io/mike-williams-blog
-theme: beautiful-jekyll
+url: https://cmwilliams.github.io
+baseurl: ""
 author: Mike Williams
 email: mike.williams@example.com
 social:
@@ -15,11 +15,18 @@ plugins:
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
 exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
-  - 404.md
-  - about.md
-  - index.md
-  - _posts/*

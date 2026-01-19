@@ -1,4 +1,6 @@
-#, Console Application]
+---
+title: .NET Console App Basics
+categories: [dotnet]
 ---
 
 ## Introduction

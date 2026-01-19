@@ -1,3 +1,8 @@
+---
+title: .NET Testing with xUnit
+categories: [dotnet]
+---
+
 ## What is xUnit?
 
 xUnit is a free, open-source, community-focused unit testing tool for the .NET Framework. It is designed to be simple and extensible, making it a great choice for developers looking to implement unit tests in their applications.

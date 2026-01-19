@@ -1,3 +1,7 @@
+---
+title: Home
+---
+
 # Welcome to Mike Williams Blog
 
 Hello and welcome to my blog! Here, I share my insights and experiences on various technical topics, including:

@@ -1,3 +1,8 @@
+---
+title: Piaware Troubleshooting and Logs
+categories: [piaware]
+---
+
 ## Introduction
 
 In this post, we will explore common troubleshooting techniques for Piaware, a popular software for receiving and decoding ADS-B signals. We will also discuss how to analyze logs to diagnose issues effectively.

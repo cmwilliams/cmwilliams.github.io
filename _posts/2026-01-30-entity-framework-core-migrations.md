@@ -1,3 +1,8 @@
+---
+title: Entity Framework Core Migrations
+categories: [dotnet]
+---
+
 ## What are Migrations?
 
 Migrations are a way to incrementally update your database schema as your data model changes. They allow you to add, remove, or modify tables and columns without losing existing data. EF Core provides a set of commands to create and apply migrations.

@@ -5,7 +5,7 @@
   url: /about
 
 - title: Piaware Articles
-  url: /category/piaware
+  url: /category/piaware/
   children:
     - title: Getting Started with Piaware
       url: /2026/01/01/getting-started-with-piaware
@@ -15,7 +15,7 @@
       url: /2026/01/10/piaware-troubleshooting-and-logs
 
 - title: .NET Tutorials
-  url: /category/dotnet
+  url: /category/dotnet/
   children:
     - title: ".NET Setup: SDK and Tooling"
       url: /2026/01/15/dotnet-setup-sdk-and-tooling

@@ -1,3 +1,8 @@
+---
+title: Piaware Setup on Raspberry Pi
+categories: [piaware]
+---
+
 ## Introduction
 
 In this article, we will walk through the process of setting up Piaware on a Raspberry Pi. Piaware is a software package that allows you to receive and share ADS-B data from aircraft. By following these steps, you will be able to set up your Raspberry Pi to receive and share this data effectively.

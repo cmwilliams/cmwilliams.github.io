@@ -1,3 +1,8 @@
+---
+title: ASP.NET Core Web API Intro
+categories: [dotnet]
+---
+
 ## What is ASP.NET Core?
 
 ASP.NET Core is an open-source, cross-platform framework for building cloud-based applications, such as web apps, IoT apps, and mobile backends. It is designed to be lightweight and modular, allowing developers to use only the components they need.

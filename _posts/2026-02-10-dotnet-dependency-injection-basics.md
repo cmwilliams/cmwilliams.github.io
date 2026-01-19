@@ -1,4 +1,6 @@
-#, .NET, Programming]
+---
+title: .NET Dependency Injection Basics
+categories: [dotnet]
 ---
 
 ## Introduction

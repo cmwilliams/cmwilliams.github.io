@@ -1,3 +1,8 @@
+---
+title: ".NET Setup: SDK and Tooling"
+categories: [dotnet]
+---
+
 ## Prerequisites
 
 Before we begin, ensure that you have the following:
