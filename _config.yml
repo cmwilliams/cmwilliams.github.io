@@ -11,7 +11,7 @@ remote_theme: daattali/beautiful-jekyll@6.0.1
 
 # --- List of links in the navigation bar --- #
 navbar-links:
-  Home: ""
+  Home: "/"
   About: "about"
   Categories:
     - Piaware: "category/piaware"
