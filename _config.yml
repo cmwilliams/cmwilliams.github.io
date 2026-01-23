@@ -31,8 +31,9 @@ social-network-links:
 
 # --- Comments --- #
 utterances:
-  repo: cmwilliams/cmwilliams.github.io
+  repository: cmwilliams/cmwilliams.github.io
   issue-term: pathname
+  theme: github-light
 
 # --- General options --- #
 url: "https://mikewilliams.io"
