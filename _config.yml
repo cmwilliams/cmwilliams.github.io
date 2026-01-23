@@ -7,7 +7,7 @@ title: Bits in Flight
 author: Mike Williams
 
 # --- Remote theme --- #
-remote_theme: daattali/beautiful-jekyll@6.0.1
+remote_theme: daattali/beautiful-jekyll@master
 
 # --- List of links in the navigation bar --- #
 navbar-links:
