@@ -30,10 +30,7 @@ social-network-links:
 #  linkedin: yourusername
 
 # --- Comments --- #
-utterances:
-  repository: cmwilliams/cmwilliams.github.io
-  issue-term: pathname
-  theme: github-light
+disqus: "cmwilliams-blog"
 
 # --- General options --- #
 url: "https://mikewilliams.io"
