@@ -29,6 +29,11 @@ social-network-links:
 #  twitter: yourusername
 #  linkedin: yourusername
 
+# --- Comments --- #
+utterances:
+  repo: cmwilliams/cmwilliams.github.io
+  issue-term: pathname
+
 # --- General options --- #
 url: "https://mikewilliams.io"
 baseurl: ""
@@ -90,7 +95,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      comments: false
+      comments: true
       social-share: true
   - scope:
       path: ""
