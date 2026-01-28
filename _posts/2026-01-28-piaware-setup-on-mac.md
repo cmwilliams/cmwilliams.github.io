@@ -1,7 +1,9 @@
 ---
-title: Running PiAware on macOS: A Complete Setup Guide
+title: "Running PiAware on macOS: A Complete Setup Guide"
 tags: [piaware, mac, setup, docker]
 ---
+
+## Running PiAware on macOS: A Complete Setup Guide
 
 If you're interested in tracking aircraft with ADS-B and feeding data to FlightAware, you might think you need a dedicated Raspberry Pi. But if you have a Mac with an RTL-SDR dongle, you can run the entire setup locally using Docker and dump1090. Here's how I got it working.
 
