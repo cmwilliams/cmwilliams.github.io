@@ -13,6 +13,7 @@ remote_theme: daattali/beautiful-jekyll@master
 navbar-links:
   Home: "/"
   About: "about"
+  Contact: "contact"
   Categories:
     - Piaware: "category/piaware"
     - .NET: "category/dotnet"
@@ -23,7 +24,7 @@ round-avatar: true
 
 # --- Footer social media links --- #
 social-network-links:
-  email: "mike.williams@example.com"
+  email: "cmwilliams@gmail.com"
   rss: true
   github: cmwilliams
 #  twitter: yourusername
